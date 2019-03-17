@@ -1,0 +1,43 @@
+<link rel="import" href="../genemo-card-content-behavior/genemo-card-content-behavior.html">
+<script type="module" src="../../../@polymer/neon-animation/neon-animatable-behavior.js"></script>
+<script type="module">
+import { NeonAnimatableBehavior } from '@polymer/neon-animation/neon-animatable-behavior.js';
+var GIVe = (function (give) {
+  'use strict'
+
+  give.GenemoTabCardContentBehaviorImpl = {
+
+    properties: {
+
+      tabText: {
+        type: String,
+        value: '',
+        readOnly: true
+      }
+
+    },
+
+    getTabHeader: function () {
+      var res = document.createElement('div')
+      var coreIcon = this.getIcon()
+      coreIcon.classList.add('smallInline')
+
+      var textSpan = document.createElement('span')
+      textSpan.textContent = this.tabText
+      res.appendChild(coreIcon)
+      res.appendChild(textSpan)
+
+      return res
+    }
+
+  }
+
+  give.GenemoTabCardContentBehavior = [
+    give.GenemoCardContentBehavior,
+    NeonAnimatableBehavior,
+    give.GenemoTabCardContentBehaviorImpl
+  ]
+
+  return give
+})(GIVe || {})
+</script>

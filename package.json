@@ -1,15 +1,5 @@
 {
-  "name": "givengine",
   "description": "GIVE (Genomic Interactive Visualization Engine) is a HTML5 library that lets you embed genomic visualization panels as you would standard HTML elements to build a customized genome browser to visualize data from public deposits (such as ENCODE) and/or in-house data.",
-  "version": "0.3.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Zhong-Lab-UCSD/Genomic-Interactive-Visualization-Engine.git"
-  },
   "keywords": [
     "genome",
     "epigenome",
@@ -21,6 +11,17 @@
     "genotype",
     "hic"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zhong-Lab-UCSD/Genomic-Interactive-Visualization-Engine.git"
+  },
+  "homepage": "https://www.givengine.org/",
+  "name": "@givengine/givengine",
+  "version": "0.3.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "contributors": [
     {
       "name": "CAO Xiaoyi",
@@ -48,25 +49,68 @@
   "bugs": {
     "url": "https://github.com/Zhong-Lab-UCSD/Genomic-Interactive-Visualization-Engine/issues"
   },
-  "homepage": "https://www.givengine.org/",
   "dependencies": {
-    "@polymer/polymer": "^3.0.5",
+    "@polymer/polymer": "^3.0.0",
     "axios": "^0.18.0",
     "express": "^4.16.4",
-    "pako": "^1.0.6"
+    "pako": "^1.0.6",
+    "@polymer/iron-collapse": "^3.0.0",
+    "@polymer/iron-dropdown": "^3.0.0",
+    "@polymer/iron-icon": "^3.0.0",
+    "@polymer/iron-iconset-svg": "^3.0.0",
+    "@polymer/neon-animation": "^3.0.0",
+    "@polymer/paper-button": "^3.0.0",
+    "@polymer/paper-checkbox": "^3.0.0",
+    "@polymer/paper-dropdown-menu": "^3.0.0",
+    "@polymer/paper-icon-button": "^3.0.0",
+    "@polymer/paper-input": "^3.0.0",
+    "@polymer/paper-item": "^3.0.0",
+    "@polymer/paper-material": "^3.0.0",
+    "@polymer/paper-radio-button": "^3.0.0",
+    "@polymer/paper-radio-group": "^3.0.0",
+    "@polymer/paper-tabs": "^3.0.0",
+    "@polymer/paper-tooltip": "^3.0.0",
+    "@polymer/iron-resizable-behavior": "^3.0.0",
+    "@polymer/paper-slider": "^3.0.0",
+    "@polymer/paper-drawer-panel": "^3.0.0",
+    "@polymer/paper-scroll-header-panel": "^3.0.0",
+    "@polymer/paper-toolbar": "^3.0.0",
+    "@polymer/paper-card": "^3.0.0",
+    "@polymer/iron-pages": "^3.0.0",
+    "@polymer/paper-dialog": "^3.0.0",
+    "@polymer/paper-dialog-scrollable": "^3.0.0",
+    "@polymer/paper-spinner": "^3.0.0",
+    "@polymer/paper-header-panel": "^3.0.0",
+    "@polymer/iron-list": "^3.0.0",
+    "@polymer/iron-scroll-threshold": "^3.0.0",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "@polymer/iron-localstorage": "^3.0.0",
+    "@polymer/paper-toggle-button": "^3.0.0",
+    "@polymer/app-layout": "^3.0.0",
+    "@polymer/paper-listbox": "^3.0.0",
+    "web-animations-js": "^2.3.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
-    "eslint": "^5.7.0",
+    "eslint": "^5.15.2",
     "grunt": "^1.0.3",
     "grunt-babel": "^8.0.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "@polymer/iron-component-page": "^4.0.0",
+    "wct-browser-legacy": "^1.0.1"
   },
   "standard": {
     "globals": [
       "Polymer"
     ]
+  },
+  "resolutions": {
+    "inherits": "2.0.3",
+    "samsam": "1.1.3",
+    "supports-color": "3.1.2",
+    "type-detect": "1.0.0"
   }
 }
